@@ -1,0 +1,54 @@
+// World Transformation
+float4x4 World;
+float4x4 WVP;
+
+texture gTexture;
+sampler2D texSamp = sampler_state
+{
+	Texture = <gTexture>;
+	MinFilter = LINEAR;
+	MagFilter = LINEAR;
+	MipFilter = LINEAR;
+	AddressU = WRAP;
+	AddressV = WRAP;
+};
+
+struct VertexInput
+{
+	float4 pos : POSITION;
+	float3 norm : NORMAL;
+	float2 tex0 : TEXCOORD;
+};
+
+struct PixelInput
+{
+	float4 wpos : POSITION;
+	float3 pos : TEXCOORD0;
+	float2 tex0 : TEXCOORD1;
+};
+
+PixelInput VS( VertexInput input )
+{
+	PixelInput output = (PixelInput)0;
+
+	output.wpos = mul( input.pos, WVP );
+	output.pos = mul( input.pos, World ).xyz;
+	output.tex0 = input.tex0;
+
+	return output;
+}
+
+float4 PS( PixelInput input ) : COLOR
+{
+	return tex2D( texSamp, input.tex0 );
+	//return float4( 1, 1, 1, 1 );
+}
+
+technique tech0 
+{
+	pass 
+	{
+		VertexShader = compile vs_3_0 VS();
+		PixelShader = compile ps_3_0 PS();
+	}
+}

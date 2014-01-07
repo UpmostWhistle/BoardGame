@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{51B06751-53A2-4F34-8BCA-22D557A81E40}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>dxframework</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;HK_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\Microsoft SDKs\Windows\v7.0A\Include;C:\Users\Tammy Laptop\Desktop\Havok_Physics_Animation_2012-1-0_PC_XS_win32_VS2010_noSimd_keycode_perpetual_20120831\hk2012_1_0_r1\Source;C:\Users\Skywalker\Desktop\hk2012_1_0_r1\Source;C:\Users\Heather\Desktop\Senior Project\Havok\hk2012_1_0_r1\Source;C:\Program Files\Microsoft DirectX SDK %28June 2010%29\Include;C:\Users\Barnett\Desktop\havok\hk2012_1_0_r1\Source;C:\Users\Sneaky\Desktop\Havok_Physics_Animation_2012-1-0_PC_XS_win32_VS2010_noSimd_keycode_perpetual_20120831\hk2012_1_0_r1\Source;C:\Users\d03254589\Desktop\Havok_Physics_Animation_2012-1-0_PC_XS_win32_VS2010_noSimd_keycode_perpetual_20120831\hk2012_1_0_r1\Source;C:\Users\D03100341\Desktop\hk2012_1_0_r1\Source;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>
+      </MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Program Files\Microsoft SDKs\Windows\v7.0A\Lib;C:\Users\Tammy Laptop\Desktop\Havok_Physics_Animation_2012-1-0_PC_XS_win32_VS2010_noSimd_keycode_perpetual_20120831\hk2012_1_0_r1\Lib\win32_vs2010_noSimd\debug_multithreaded_dll;C:\Users\Skywalker\Desktop\hk2012_1_0_r1\Lib\win32_vs2010_noSimd\debug_multithreaded_dll;C:\Users\Heather\Desktop\Senior Project\Havok\hk2012_1_0_r1\Lib\win32_vs2010_noSimd\debug_multithreaded_dll;C:\Program Files\Microsoft DirectX SDK %28June 2010%29\Lib\x86;C:\Users\Barnett\Desktop\havok\hk2012_1_0_r1\Lib\win32_vs2010_noSimd\debug_multithreaded_dll;C:\Users\Sneaky\Desktop\Havok_Physics_Animation_2012-1-0_PC_XS_win32_VS2010_noSimd_keycode_perpetual_20120831\hk2012_1_0_r1\Lib\win32_vs2010_noSimd\debug_multithreaded_dll;C:\Users\d03254589\Desktop\Havok_Physics_Animation_2012-1-0_PC_XS_win32_VS2010_noSimd_keycode_perpetual_20120831\hk2012_1_0_r1\Lib\win32_vs2010_noSimd\debug_multithreaded_dll;C:\Users\D03100341\Desktop\hk2012_1_0_r1\Lib\win32_vs2010_noSimd\debug_multithreaded_dll;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>dxguid.lib;opengl32.lib;hkgBridge.lib;hkgOgls.lib;hkgOglES.lib;hkgOglES2.lib;hkgDx11.lib;hkgDx9s.lib;hkgSoundCommon.lib;hkgSoundXAudio2.lib;hkgCommon.lib;hkpUtilities.lib;hkpVehicle.lib;hkpDynamics.lib;hkpCollide.lib;hkpInternal.lib;hkpConstraintSolver.lib;hkaRagdoll.lib;hkaInternal.lib;hkaAnimation.lib;hkInternal.lib;hkGeometryUtilities.lib;hkVisualize.lib;hkSerialize.lib;hkCompat.lib;hkSceneData.lib;hkBase.lib;hkcdCollide.lib;hkcdInternal.lib;fmodex_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AudioManager.cpp" />
+    <ClCompile Include="BaseMenu.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="CameraObj.cpp" />
+    <ClCompile Include="d3dUtil.cpp" />
+    <ClCompile Include="DirectXFramework.cpp" />
+    <ClCompile Include="Enemy_Align.cpp" />
+    <ClCompile Include="Enemy_Arrive.cpp" />
+    <ClCompile Include="Enemy_Attack.cpp" />
+    <ClCompile Include="Enemy_Base.cpp" />
+    <ClCompile Include="Enemy_Face.cpp" />
+    <ClCompile Include="Enemy_Flee.cpp" />
+    <ClCompile Include="Enemy_GreenGhost.cpp" />
+    <ClCompile Include="Enemy_Movement.cpp" />
+    <ClCompile Include="Enemy_PurpleGhost.cpp" />
+    <ClCompile Include="Enemy_RedGhost.cpp" />
+    <ClCompile Include="Enemy_Seek.cpp" />
+    <ClCompile Include="Enemy_SpawnMiniGhost.cpp" />
+    <ClCompile Include="Enemy_Wander.cpp" />
+    <ClCompile Include="Enemy_YellowGhost.cpp" />
+    <ClCompile Include="EntityManager.cpp" />
+    <ClCompile Include="EventManager.cpp" />
+    <ClCompile Include="GameStateManager.cpp" />
+    <ClCompile Include="Gun.cpp" />
+    <ClCompile Include="HavokCore.cpp" />
+    <ClCompile Include="HUD.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="Level_Base.cpp" />
+    <ClCompile Include="Level_Beyond5.cpp" />
+    <ClCompile Include="Level_Four.cpp" />
+    <ClCompile Include="Level_Manager.cpp" />
+    <ClCompile Include="Level_One.cpp" />
+    <ClCompile Include="Level_Three.cpp" />
+    <ClCompile Include="Level_Tutorial.cpp" />
+    <ClCompile Include="Level_Two.cpp" />
+    <ClCompile Include="MenuMain.cpp" />
+    <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="Object_Base.cpp" />
+    <ClCompile Include="Object_Player.cpp" />
+    <ClCompile Include="OptionsMenu.cpp" />
+    <ClCompile Include="PauseMenu.cpp" />
+    <ClCompile Include="PSystem.cpp" />
+    <ClCompile Include="RenderObject.cpp" />
+    <ClCompile Include="SoundEffect.cpp" />
+    <ClCompile Include="SoundLoader.cpp" />
+    <ClCompile Include="torches.cpp" />
+    <ClCompile Include="Vertex.cpp" />
+    <ClCompile Include="winMain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AudioManager.h" />
+    <ClInclude Include="BaseMenu.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="CameraObj.h" />
+    <ClInclude Include="d3dUtil.h" />
+    <ClInclude Include="DirectXFramework.h" />
+    <ClInclude Include="Enemy_Align.h" />
+    <ClInclude Include="Enemy_Arrive.h" />
+    <ClInclude Include="Enemy_Attack.h" />
+    <ClInclude Include="Enemy_Base.h" />
+    <ClInclude Include="Enemy_Face.h" />
+    <ClInclude Include="Enemy_Flee.h" />
+    <ClInclude Include="Enemy_GreenGhost.h" />
+    <ClInclude Include="Enemy_Movement.h" />
+    <ClInclude Include="Enemy_PurpleGhost.h" />
+    <ClInclude Include="Enemy_RedGhost.h" />
+    <ClInclude Include="Enemy_Seek.h" />
+    <ClInclude Include="Enemy_SpawnMiniGhost.h" />
+    <ClInclude Include="Enemy_Wander.h" />
+    <ClInclude Include="Enemy_YellowGhost.h" />
+    <ClInclude Include="EntityManager.h" />
+    <ClInclude Include="EventManager.h" />
+    <ClInclude Include="Fire.h" />
+    <ClInclude Include="GameStateManager.h" />
+    <ClInclude Include="Gun.h" />
+    <ClInclude Include="HavokCore.h" />
+    <ClInclude Include="HUD.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="Level_Base.h" />
+    <ClInclude Include="Level_Beyond5.h" />
+    <ClInclude Include="Level_Four.h" />
+    <ClInclude Include="Level_Manager.h" />
+    <ClInclude Include="Level_One.h" />
+    <ClInclude Include="Level_Three.h" />
+    <ClInclude Include="Level_Tutorial.h" />
+    <ClInclude Include="Level_Two.h" />
+    <ClInclude Include="MenuMain.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="Object_Base.h" />
+    <ClInclude Include="Object_Player.h" />
+    <ClInclude Include="OptionsMenu.h" />
+    <ClInclude Include="PauseMenu.h" />
+    <ClInclude Include="PSystem.h" />
+    <ClInclude Include="RenderObject.h" />
+    <ClInclude Include="Room.h" />
+    <ClInclude Include="SoundEffect.h" />
+    <ClInclude Include="SoundLoader.h" />
+    <ClInclude Include="torches.h" />
+    <ClInclude Include="Utilities.h" />
+    <ClInclude Include="Vertex.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Gun\Gun\blend_hm1.dds" />
+    <None Include="..\..\..\Gun\Gun\bolt.dds" />
+    <None Include="..\..\..\Gun\Gun\bolt.xcf" />
+    <None Include="..\..\..\Gun\Gun\bolt2.dds" />
+    <None Include="..\..\..\Gun\Gun\bolt2.xcf" />
+    <None Include="..\..\..\Gun\Gun\gun.fx" />
+    <None Include="Armor.dds" />
+    <None Include="Body.dds" />
+    <None Include="bolt.dds" />
+    <None Include="bolt2.dds" />
+    <None Include="bolt3.dds" />
+    <None Include="bolt4blue.dds" />
+    <None Include="CandleStick.X" />
+    <None Include="Chair.X" />
+    <None Include="counter.X" />
+    <None Include="counterIsland.X" />
+    <None Include="Cup.X" />
+    <None Include="defaulteffect.fx" />
+    <None Include="Dwarf.x" />
+    <None Include="DwarfHead.dds" />
+    <None Include="FlippedY.X" />
+    <None Include="Fridge.X" />
+    <None Include="GirRobot.X" />
+    <None Include="Headgear.dds" />
+    <None Include="Helmet.dds" />
+    <None Include="House.X" />
+    <None Include="Metal_Texture.jpg" />
+    <None Include="Pack.dds" />
+    <None Include="Parallax.fx" />
+    <None Include="Piano.X" />
+    <None Include="PlayerFlipped.X" />
+    <None Include="Sink.X" />
+    <None Include="sinkCounter.X" />
+    <None Include="Table.X" />
+    <None Include="TestShader.txt" />
+    <None Include="ToonColored.fx" />
+    <None Include="Torch.X" />
+    <None Include="Weapons.dds" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
