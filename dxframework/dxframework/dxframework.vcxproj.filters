@@ -28,9 +28,6 @@
     <Filter Include="Header Files\Objects">
       <UniqueIdentifier>{97f5a217-b0de-42be-af24-2b49b32aa17b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Objects\Enemy">
-      <UniqueIdentifier>{4b7125b4-1eac-4f51-afef-0e266c390fbc}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Game">
       <UniqueIdentifier>{8375c040-ba93-477f-b4d2-93ec4bbf1f92}</UniqueIdentifier>
     </Filter>
@@ -49,81 +46,21 @@
     <Filter Include="Source Files\Objects">
       <UniqueIdentifier>{9c175aff-ff4b-44d0-b45f-9b0203902a1e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Objects\Enemy">
-      <UniqueIdentifier>{0d42c15a-47ab-47ca-b5cb-807e327bb353}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Devices">
       <UniqueIdentifier>{a2b5c8bd-e41f-4b53-bcbf-90f8543488bd}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\Devices">
       <UniqueIdentifier>{e07fdf1f-22ef-4582-be9a-76402131e0d7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files\Models\Base_Objects">
-      <UniqueIdentifier>{854a1f9b-9807-4dbc-bfcc-c024b4622092}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Objects\Enemy\Attacks">
-      <UniqueIdentifier>{56e7277c-61a4-40c7-89ed-54fb99b2c310}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Objects\Enemy\Defence">
-      <UniqueIdentifier>{481897a1-5f81-49a0-ac2a-aaa56e2ca294}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Objects\Enemy\Ghosts">
-      <UniqueIdentifier>{e3ea09f1-2d52-47f0-97f0-848af15b0bb1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Objects\Enemy\Movements">
-      <UniqueIdentifier>{93677e4f-5956-4480-9d14-2bbc713e4f53}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Objects\Enemy\Attacks">
-      <UniqueIdentifier>{f8123df2-b39f-4db1-954a-010a3a0e92c6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Objects\Enemy\Defence">
-      <UniqueIdentifier>{1eeb9a0b-e6cb-464a-959e-c8a0f0c944b5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Objects\Enemy\Movements">
-      <UniqueIdentifier>{b118c141-df18-4ecd-944c-f92c0fe7867a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Objects\Enemy\Ghosts">
-      <UniqueIdentifier>{1c39b273-4379-49bd-886c-0c873eb7a30a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Game\LevelHandlers">
-      <UniqueIdentifier>{a28e10cd-35e6-460b-a4f1-08a4e2a28c14}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Game\LevelHandlers">
-      <UniqueIdentifier>{f637567f-d15c-4685-bfd8-401280eaeb7f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Game\LevelHandlers\Levels">
-      <UniqueIdentifier>{48a73139-f8aa-4ee6-ae4c-d539a34f66a4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Game\LevelHandlers\Levels">
-      <UniqueIdentifier>{a6e04cbb-12ed-41a2-811b-8986d5117958}</UniqueIdentifier>
+    <Filter Include="Source Files\Objects\Board">
+      <UniqueIdentifier>{b5ebe8a8-689d-4908-be57-a92bd71663b7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="winMain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Object_Player.cpp">
-      <Filter>Source Files\Objects</Filter>
-    </ClCompile>
-    <ClCompile Include="Object_Base.cpp">
-      <Filter>Source Files\Objects</Filter>
-    </ClCompile>
-    <ClCompile Include="BaseMenu.cpp">
-      <Filter>Source Files\Menu</Filter>
-    </ClCompile>
-    <ClCompile Include="OptionsMenu.cpp">
-      <Filter>Source Files\Menu</Filter>
-    </ClCompile>
-    <ClCompile Include="PauseMenu.cpp">
-      <Filter>Source Files\Menu</Filter>
-    </ClCompile>
-    <ClCompile Include="MenuMain.cpp">
-      <Filter>Source Files\Menu</Filter>
-    </ClCompile>
     <ClCompile Include="DirectXFramework.cpp">
-      <Filter>Source Files\Game</Filter>
-    </ClCompile>
-    <ClCompile Include="GameStateManager.cpp">
       <Filter>Source Files\Game</Filter>
     </ClCompile>
     <ClCompile Include="Mesh.cpp">
@@ -132,147 +69,15 @@
     <ClCompile Include="HavokCore.cpp">
       <Filter>Source Files\Game</Filter>
     </ClCompile>
-    <ClCompile Include="d3dUtil.cpp">
-      <Filter>Source Files\Devices</Filter>
+    <ClCompile Include="BoardManager.cpp">
+      <Filter>Source Files\Objects\Board</Filter>
     </ClCompile>
-    <ClCompile Include="CameraObj.cpp">
-      <Filter>Source Files\Devices</Filter>
-    </ClCompile>
-    <ClCompile Include="Camera.cpp">
-      <Filter>Source Files\Devices</Filter>
-    </ClCompile>
-    <ClCompile Include="InputManager.cpp">
-      <Filter>Source Files\Devices</Filter>
-    </ClCompile>
-    <ClCompile Include="Gun.cpp">
-      <Filter>Source Files\Objects</Filter>
-    </ClCompile>
-    <ClCompile Include="Item.cpp">
-      <Filter>Source Files\Objects</Filter>
-    </ClCompile>
-    <ClCompile Include="PSystem.cpp">
-      <Filter>Source Files\Objects</Filter>
-    </ClCompile>
-    <ClCompile Include="RenderObject.cpp">
-      <Filter>Source Files\Devices</Filter>
-    </ClCompile>
-    <ClCompile Include="Vertex.cpp">
-      <Filter>Source Files\Game</Filter>
-    </ClCompile>
-    <ClCompile Include="AudioManager.cpp">
-      <Filter>Source Files\Audio / FMOD</Filter>
-    </ClCompile>
-    <ClCompile Include="SoundEffect.cpp">
-      <Filter>Source Files\Audio / FMOD</Filter>
-    </ClCompile>
-    <ClCompile Include="SoundLoader.cpp">
-      <Filter>Source Files\Audio / FMOD</Filter>
-    </ClCompile>
-    <ClCompile Include="EntityManager.cpp">
-      <Filter>Source Files\Game</Filter>
-    </ClCompile>
-    <ClCompile Include="Enemy_Align.cpp">
-      <Filter>Source Files\Objects\Enemy\Movements</Filter>
-    </ClCompile>
-    <ClCompile Include="Enemy_Attack.cpp">
-      <Filter>Source Files\Objects\Enemy\Attacks</Filter>
-    </ClCompile>
-    <ClCompile Include="Enemy_Base.cpp">
-      <Filter>Source Files\Objects\Enemy\Ghosts</Filter>
-    </ClCompile>
-    <ClCompile Include="Enemy_Face.cpp">
-      <Filter>Source Files\Objects\Enemy\Movements</Filter>
-    </ClCompile>
-    <ClCompile Include="Enemy_Flee.cpp">
-      <Filter>Source Files\Objects\Enemy\Movements</Filter>
-    </ClCompile>
-    <ClCompile Include="Enemy_GreenGhost.cpp">
-      <Filter>Source Files\Objects\Enemy\Ghosts</Filter>
-    </ClCompile>
-    <ClCompile Include="Enemy_PurpleGhost.cpp">
-      <Filter>Source Files\Objects\Enemy\Ghosts</Filter>
-    </ClCompile>
-    <ClCompile Include="Enemy_RedGhost.cpp">
-      <Filter>Source Files\Objects\Enemy\Ghosts</Filter>
-    </ClCompile>
-    <ClCompile Include="Enemy_YellowGhost.cpp">
-      <Filter>Source Files\Objects\Enemy\Ghosts</Filter>
-    </ClCompile>
-    <ClCompile Include="Enemy_Movement.cpp">
-      <Filter>Source Files\Objects\Enemy\Movements</Filter>
-    </ClCompile>
-    <ClCompile Include="Enemy_Seek.cpp">
-      <Filter>Source Files\Objects\Enemy\Movements</Filter>
-    </ClCompile>
-    <ClCompile Include="Enemy_Wander.cpp">
-      <Filter>Source Files\Objects\Enemy\Movements</Filter>
-    </ClCompile>
-    <ClCompile Include="Enemy_SpawnMiniGhost.cpp">
-      <Filter>Source Files\Objects\Enemy\Defence</Filter>
-    </ClCompile>
-    <ClCompile Include="Enemy_Arrive.cpp">
-      <Filter>Source Files\Objects\Enemy\Movements</Filter>
-    </ClCompile>
-    <ClCompile Include="EventManager.cpp">
-      <Filter>Source Files\Game</Filter>
-    </ClCompile>
-    <ClCompile Include="HUD.cpp">
-      <Filter>Source Files\Game</Filter>
-    </ClCompile>
-    <ClCompile Include="Level_Base.cpp">
-      <Filter>Source Files\Game\LevelHandlers\Levels</Filter>
-    </ClCompile>
-    <ClCompile Include="Level_Two.cpp">
-      <Filter>Source Files\Game\LevelHandlers\Levels</Filter>
-    </ClCompile>
-    <ClCompile Include="Level_Four.cpp">
-      <Filter>Source Files\Game\LevelHandlers\Levels</Filter>
-    </ClCompile>
-    <ClCompile Include="Level_One.cpp">
-      <Filter>Source Files\Game\LevelHandlers\Levels</Filter>
-    </ClCompile>
-    <ClCompile Include="Level_Three.cpp">
-      <Filter>Source Files\Game\LevelHandlers\Levels</Filter>
-    </ClCompile>
-    <ClCompile Include="Level_Tutorial.cpp">
-      <Filter>Source Files\Game\LevelHandlers\Levels</Filter>
-    </ClCompile>
-    <ClCompile Include="Level_Manager.cpp">
-      <Filter>Source Files\Game\LevelHandlers</Filter>
-    </ClCompile>
-    <ClCompile Include="Level_Beyond5.cpp">
-      <Filter>Source Files\Game\LevelHandlers\Levels</Filter>
-    </ClCompile>
-    <ClCompile Include="torches.cpp">
-      <Filter>Source Files\Objects</Filter>
+    <ClCompile Include="Space.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Object_Base.h">
-      <Filter>Header Files\Objects</Filter>
-    </ClInclude>
-    <ClInclude Include="Object_Player.h">
-      <Filter>Header Files\Objects</Filter>
-    </ClInclude>
-    <ClInclude Include="Item.h">
-      <Filter>Header Files\Objects</Filter>
-    </ClInclude>
-    <ClInclude Include="MenuMain.h">
-      <Filter>Header Files\Menu</Filter>
-    </ClInclude>
-    <ClInclude Include="OptionsMenu.h">
-      <Filter>Header Files\Menu</Filter>
-    </ClInclude>
-    <ClInclude Include="PauseMenu.h">
-      <Filter>Header Files\Menu</Filter>
-    </ClInclude>
-    <ClInclude Include="BaseMenu.h">
-      <Filter>Header Files\Menu</Filter>
-    </ClInclude>
     <ClInclude Include="DirectXFramework.h">
-      <Filter>Header Files\Game</Filter>
-    </ClInclude>
-    <ClInclude Include="GameStateManager.h">
       <Filter>Header Files\Game</Filter>
     </ClInclude>
     <ClInclude Include="Mesh.h">
@@ -281,241 +86,16 @@
     <ClInclude Include="HavokCore.h">
       <Filter>Header Files\Game</Filter>
     </ClInclude>
-    <ClInclude Include="PSystem.h">
-      <Filter>Header Files\Objects</Filter>
+    <ClInclude Include="BoardManager.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Camera.h">
-      <Filter>Header Files\Devices</Filter>
-    </ClInclude>
-    <ClInclude Include="CameraObj.h">
-      <Filter>Header Files\Devices</Filter>
-    </ClInclude>
-    <ClInclude Include="d3dUtil.h">
-      <Filter>Header Files\Devices</Filter>
-    </ClInclude>
-    <ClInclude Include="InputManager.h">
-      <Filter>Header Files\Devices</Filter>
-    </ClInclude>
-    <ClInclude Include="RenderObject.h">
-      <Filter>Header Files\Devices</Filter>
-    </ClInclude>
-    <ClInclude Include="Vertex.h">
-      <Filter>Header Files\Game</Filter>
-    </ClInclude>
-    <ClInclude Include="AudioManager.h">
-      <Filter>Header Files\Audio / FMOD</Filter>
-    </ClInclude>
-    <ClInclude Include="SoundEffect.h">
-      <Filter>Header Files\Audio / FMOD</Filter>
-    </ClInclude>
-    <ClInclude Include="SoundLoader.h">
-      <Filter>Header Files\Audio / FMOD</Filter>
-    </ClInclude>
-    <ClInclude Include="Utilities.h">
-      <Filter>Header Files\Audio / FMOD</Filter>
-    </ClInclude>
-    <ClInclude Include="Gun.h">
-      <Filter>Header Files\Objects</Filter>
-    </ClInclude>
-    <ClInclude Include="EntityManager.h">
-      <Filter>Header Files\Game</Filter>
-    </ClInclude>
-    <ClInclude Include="Enemy_Attack.h">
-      <Filter>Header Files\Objects\Enemy\Attacks</Filter>
-    </ClInclude>
-    <ClInclude Include="Enemy_SpawnMiniGhost.h">
-      <Filter>Header Files\Objects\Enemy\Defence</Filter>
-    </ClInclude>
-    <ClInclude Include="Enemy_Align.h">
-      <Filter>Header Files\Objects\Enemy\Movements</Filter>
-    </ClInclude>
-    <ClInclude Include="Enemy_Face.h">
-      <Filter>Header Files\Objects\Enemy\Movements</Filter>
-    </ClInclude>
-    <ClInclude Include="Enemy_Flee.h">
-      <Filter>Header Files\Objects\Enemy\Movements</Filter>
-    </ClInclude>
-    <ClInclude Include="Enemy_Movement.h">
-      <Filter>Header Files\Objects\Enemy\Movements</Filter>
-    </ClInclude>
-    <ClInclude Include="Enemy_Seek.h">
-      <Filter>Header Files\Objects\Enemy\Movements</Filter>
-    </ClInclude>
-    <ClInclude Include="Enemy_Wander.h">
-      <Filter>Header Files\Objects\Enemy\Movements</Filter>
-    </ClInclude>
-    <ClInclude Include="Enemy_Arrive.h">
-      <Filter>Header Files\Objects\Enemy\Movements</Filter>
-    </ClInclude>
-    <ClInclude Include="Enemy_Base.h">
-      <Filter>Header Files\Objects\Enemy\Ghosts</Filter>
-    </ClInclude>
-    <ClInclude Include="Enemy_YellowGhost.h">
-      <Filter>Header Files\Objects\Enemy\Ghosts</Filter>
-    </ClInclude>
-    <ClInclude Include="Enemy_GreenGhost.h">
-      <Filter>Header Files\Objects\Enemy\Ghosts</Filter>
-    </ClInclude>
-    <ClInclude Include="Enemy_PurpleGhost.h">
-      <Filter>Header Files\Objects\Enemy\Ghosts</Filter>
-    </ClInclude>
-    <ClInclude Include="Enemy_RedGhost.h">
-      <Filter>Header Files\Objects\Enemy\Ghosts</Filter>
-    </ClInclude>
-    <ClInclude Include="EventManager.h">
-      <Filter>Header Files\Game</Filter>
-    </ClInclude>
-    <ClInclude Include="HUD.h">
-      <Filter>Header Files\Game</Filter>
-    </ClInclude>
-    <ClInclude Include="Level_Two.h">
-      <Filter>Header Files\Game\LevelHandlers\Levels</Filter>
-    </ClInclude>
-    <ClInclude Include="Level_Base.h">
-      <Filter>Header Files\Game\LevelHandlers\Levels</Filter>
-    </ClInclude>
-    <ClInclude Include="Level_Four.h">
-      <Filter>Header Files\Game\LevelHandlers\Levels</Filter>
-    </ClInclude>
-    <ClInclude Include="Level_One.h">
-      <Filter>Header Files\Game\LevelHandlers\Levels</Filter>
-    </ClInclude>
-    <ClInclude Include="Level_Three.h">
-      <Filter>Header Files\Game\LevelHandlers\Levels</Filter>
-    </ClInclude>
-    <ClInclude Include="Level_Tutorial.h">
-      <Filter>Header Files\Game\LevelHandlers\Levels</Filter>
-    </ClInclude>
-    <ClInclude Include="Level_Manager.h">
-      <Filter>Header Files\Game\LevelHandlers</Filter>
-    </ClInclude>
-    <ClInclude Include="Level_Beyond5.h">
-      <Filter>Header Files\Game\LevelHandlers\Levels</Filter>
-    </ClInclude>
-    <ClInclude Include="Room.h">
-      <Filter>Header Files\Objects</Filter>
-    </ClInclude>
-    <ClInclude Include="Fire.h">
-      <Filter>Header Files\Objects</Filter>
-    </ClInclude>
-    <ClInclude Include="torches.h">
-      <Filter>Header Files\Objects</Filter>
+    <ClInclude Include="Space.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="GirRobot.X">
-      <Filter>Resource Files\Models</Filter>
-    </None>
     <None Include="defaulteffect.fx">
       <Filter>Resource Files\Shaders</Filter>
-    </None>
-    <None Include="Parallax.fx">
-      <Filter>Resource Files\Shaders</Filter>
-    </None>
-    <None Include="ToonColored.fx">
-      <Filter>Resource Files\Shaders</Filter>
-    </None>
-    <None Include="Metal_Texture.jpg">
-      <Filter>Resource Files\Texture</Filter>
-    </None>
-    <None Include="Armor.dds">
-      <Filter>Resource Files\Texture</Filter>
-    </None>
-    <None Include="Body.dds">
-      <Filter>Resource Files\Texture</Filter>
-    </None>
-    <None Include="DwarfHead.dds">
-      <Filter>Resource Files\Texture</Filter>
-    </None>
-    <None Include="Headgear.dds">
-      <Filter>Resource Files\Texture</Filter>
-    </None>
-    <None Include="Helmet.dds">
-      <Filter>Resource Files\Texture</Filter>
-    </None>
-    <None Include="Pack.dds">
-      <Filter>Resource Files\Texture</Filter>
-    </None>
-    <None Include="Weapons.dds">
-      <Filter>Resource Files\Texture</Filter>
-    </None>
-    <None Include="Dwarf.x">
-      <Filter>Resource Files\Models</Filter>
-    </None>
-    <None Include="House.X">
-      <Filter>Resource Files\Models</Filter>
-    </None>
-    <None Include="TestShader.txt">
-      <Filter>Resource Files\Shaders</Filter>
-    </None>
-    <None Include="..\..\..\Gun\Gun\bolt2.xcf">
-      <Filter>Resource Files\Texture</Filter>
-    </None>
-    <None Include="..\..\..\Gun\Gun\blend_hm1.dds">
-      <Filter>Resource Files\Texture</Filter>
-    </None>
-    <None Include="..\..\..\Gun\Gun\bolt.dds">
-      <Filter>Resource Files\Texture</Filter>
-    </None>
-    <None Include="..\..\..\Gun\Gun\bolt.xcf">
-      <Filter>Resource Files\Texture</Filter>
-    </None>
-    <None Include="..\..\..\Gun\Gun\bolt2.dds">
-      <Filter>Resource Files\Texture</Filter>
-    </None>
-    <None Include="..\..\..\Gun\Gun\gun.fx">
-      <Filter>Resource Files\Shaders</Filter>
-    </None>
-    <None Include="FlippedY.X">
-      <Filter>Resource Files\Models</Filter>
-    </None>
-    <None Include="PlayerFlipped.X">
-      <Filter>Resource Files\Models</Filter>
-    </None>
-    <None Include="bolt.dds">
-      <Filter>Resource Files\Texture</Filter>
-    </None>
-    <None Include="bolt2.dds">
-      <Filter>Resource Files\Texture</Filter>
-    </None>
-    <None Include="bolt3.dds">
-      <Filter>Resource Files\Texture</Filter>
-    </None>
-    <None Include="bolt4blue.dds">
-      <Filter>Resource Files\Texture</Filter>
-    </None>
-    <None Include="CandleStick.X">
-      <Filter>Resource Files\Models\Base_Objects</Filter>
-    </None>
-    <None Include="Chair.X">
-      <Filter>Resource Files\Models\Base_Objects</Filter>
-    </None>
-    <None Include="counter.X">
-      <Filter>Resource Files\Models\Base_Objects</Filter>
-    </None>
-    <None Include="counterIsland.X">
-      <Filter>Resource Files\Models\Base_Objects</Filter>
-    </None>
-    <None Include="Cup.X">
-      <Filter>Resource Files\Models\Base_Objects</Filter>
-    </None>
-    <None Include="sinkCounter.X">
-      <Filter>Resource Files\Models\Base_Objects</Filter>
-    </None>
-    <None Include="Table.X">
-      <Filter>Resource Files\Models\Base_Objects</Filter>
-    </None>
-    <None Include="Fridge.X">
-      <Filter>Resource Files\Models\Base_Objects</Filter>
-    </None>
-    <None Include="Piano.X">
-      <Filter>Resource Files\Models\Base_Objects</Filter>
-    </None>
-    <None Include="Torch.X">
-      <Filter>Resource Files\Models</Filter>
-    </None>
-    <None Include="Sink.X">
-      <Filter>Resource Files\Models\Base_Objects</Filter>
     </None>
   </ItemGroup>
 </Project>
