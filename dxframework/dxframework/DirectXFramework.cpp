@@ -1,8 +1,5 @@
 #include "DirectXFramework.h"
-#include <crtdbg.h>
-//CDirectXFramework* gd3dApp   = 0;
-IDirect3DDevice9* m_pD3DDevice = 0;
-//CameraObj* gCamera = 0;
+
 
 CDirectXFramework::CDirectXFramework(void)
 {
@@ -87,30 +84,11 @@ void CDirectXFramework::Init(HWND& hWnd, HINSTANCE& hInst, bool bWindowed)
 								deviceBehaviorFlags,	// behavior flags
 								&D3Dpp,					// presentation parameters
 								&m_pD3DDevice);			// returned device pointer
-
-	RECT R;
-	GetClientRect(m_hWnd, &R);
-	float width2  = (float)R.right;
-	float height2 = (float)R.bottom;
-	// create a vertex format
-	D3DVERTEXELEMENT9 elems[] =
-	{
-		{0, 0, D3DDECLTYPE_FLOAT4, D3DDECLMETHOD_DEFAULT, D3DDECLUSAGE_POSITION, 0},
-		{0, 16, D3DDECLTYPE_FLOAT3, D3DDECLMETHOD_DEFAULT, D3DDECLUSAGE_NORMAL, 0},
-		{0, 28, D3DDECLTYPE_FLOAT2, D3DDECLMETHOD_DEFAULT, D3DDECLUSAGE_TEXCOORD, 0},
-		D3DDECL_END()
-	};
-	m_pD3DDevice->CreateVertexDeclaration( elems, &d3dVertexDecl );
 }
 
 HWND CDirectXFramework::getMainWnd()
 {
 	return m_hWnd;
-}
-
-void CDirectXFramework::Update(float dt)
-{
-
 }
 
 void CDirectXFramework::Render(float dt)
@@ -129,10 +107,8 @@ void CDirectXFramework::Shutdown()
 	//SAFE_RELEASE(m_pTexture)
 
 	// Sprite
-	SAFE_RELEASE(m_pD3DSprite)
 
 	// Font
-	SAFE_RELEASE(m_pD3DFont)
 
 	// 3DDevice	
 	SAFE_RELEASE(m_pD3DDevice)
